@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Front-end foundations: HTML forms</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>New User Registration</legend>
+                    <div>
+                        <label for="name">Full Name:</label>
+                        <input
+                            id="name"
+                            type="text"
+                            name="name"
+                            placeholder="Please Enter Your Full Name"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            placeholder="Please Enter Your Full Email"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us about yourself"
+                            maxlength="200"
+                            required
+                        ></textarea>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Subscribe to our Newsletter?</legend>
+                            <input
+                                id="yes-newsletter"
+                                type="radio"
+                                name="newsletter"
+                            />
+                            <label for="yes-newsletter">Yes</label>
+                            <input
+                                id="no-newsletter"
+                                type="radio"
+                                name="newsletter"
+                            />
+                            <label for="no-newsletter">No</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 5px;
+}
+
+main {
+    margin: 0;
+}
+
+main div {
+    padding: 5px 0;
+}
